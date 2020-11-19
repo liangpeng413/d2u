@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: consumer-client
+  cloud:
+    config:
+      label: master
+      name: consumer-client-redis
+      discovery:
+        service-id: config-server
+        enabled: true
+
+server:
+  port: 10222
